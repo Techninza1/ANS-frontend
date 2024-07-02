@@ -12,6 +12,13 @@
 .first-left-container {
   margin-bottom: 20px;
 }
+.first-left-container h1{
+  font-size: 4rem;
+}
+
+.first-left-container p{
+  margin: 20px 0px;
+}
 
 .first-right-container img {
   width: 100%;
