@@ -1,0 +1,81 @@
+.Form-main-container {
+  background-image: url("../../assets/logos/blogBanner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: auto;
+  width: 100%;
+}
+
+.Form-sub-container {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.Form-left-box,
+.Form-right-box {
+  padding: 40px;
+}
+
+.Form-left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Form-left-box h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+}
+
+.Form-left-box p {
+  font-size: 18px;
+  color: #555;
+}
+
+.Form-right-box {
+  text-align: left;
+  padding: 24px 24px 54px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  min-height: 250px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Form-right-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form-right-box label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.Form-right-box input,
+.Form-right-box textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Form-right-box textarea {
+  resize: none;
+  height: 100px;
+}
+
+
+.Form-right-box button:hover {
+  background-color: #0056b3;
+}

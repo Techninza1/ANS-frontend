@@ -1,0 +1,27 @@
+
+.slider-container{
+    width: 80%;
+    margin: auto;
+}
+
+.sliderheading {
+  text-align: center;
+  margin-top: 5rem;
+}
+.logoSlider {
+  width: 100%;
+  overflow: hidden;
+  margin: 3rem 0rem;
+}
+
+.logoSlider ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.logoSlider ul a img {
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

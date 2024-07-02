@@ -1,0 +1,94 @@
+
+.E-card{
+    width: 300px;
+    height: auto;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+
+}
+.E-card:hover{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.293);
+}
+.E-sub-img{
+    text-align: center;
+    object-fit: contain;
+    align-self: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    
+}
+.E-sub-img img{
+ margin:10px 0px 20px 0px;
+}
+.E-sub-img h3{
+ margin-bottom: 10px;
+
+
+}
+.E-sub-card{
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+/* ECard.css */
+
+@media only screen and (max-width: 1100px) {
+    .E-card {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .E-sub-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center   ;
+    }
+  
+    .E-sub-img img {
+      width: 100%;
+      height: auto;
+      object-fit: conver;
+    }
+  
+    .E-sub-img h3 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .E-sub-card p {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .E-sub-img h3 {
+      font-size: 1rem;
+    }
+  
+    .E-sub-card p {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  
+    .btn {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  

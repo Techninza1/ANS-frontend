@@ -1,0 +1,13 @@
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: #52bfb2;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .text-span{
+    color: #fdb641;
+  }

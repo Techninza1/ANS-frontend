@@ -1,0 +1,46 @@
+.E-main-container{
+    background-color: #fbfbfd;
+    text-align: center;
+    width: 100%;
+}
+
+.E-sub-container{
+    width: 80%;
+    margin: auto;
+}
+.E-top h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.E-bottom{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .E-bottom{
+        grid-template-columns: repeat(3,1fr);
+    
+
+    }
+}
+@media only screen and (max-width: 912px) {
+    .E-bottom{
+        grid-template-columns: repeat(2,1fr);
+    
+
+    }
+
+}
+@media only screen and (max-width: 712px) {
+    .E-bottom{
+        grid-template-columns: repeat(1,1fr);
+    
+
+    }
+
+}

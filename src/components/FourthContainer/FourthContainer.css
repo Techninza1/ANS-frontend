@@ -1,0 +1,43 @@
+.fourth-main-container{
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+
+}
+.fourth-left-box{
+    margin: 50px 0px;
+}
+.fourth-right-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+    
+}
+
+
+@media only screen and (max-width: 912px) {
+    .fourth-right-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .fourth-right-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+}
