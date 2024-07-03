@@ -12,9 +12,9 @@
 .first-left-container {
   margin-bottom: 20px;
 }
-.first-left-container h1{
-  font-size: 4rem;
-}
+/* .first-left-container h1{
+  font-size: 50px;
+} */
 
 .first-left-container p{
   margin: 20px 0px;
@@ -52,6 +52,7 @@
   background-color: orange;
 }
 
+
 /* Responsive styles */
 @media (min-width: 600px) {
   .first-container {
@@ -70,12 +71,15 @@
     flex: 1;
     text-align: right;
   }
+
 }
 
 @media (min-width: 900px) {
   .first-container {
     padding: 40px;
   }
+  
+
 
   .first-left-container {
     margin-right: 40px;
@@ -94,4 +98,5 @@
   .slider-dot.orange {
     background-color: orange;
   }
+
 }

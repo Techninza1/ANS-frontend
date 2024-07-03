@@ -1,14 +1,19 @@
 import React from "react";
 import "./FirstContainer.css";
 
+
 const FirstContainer = ({ sliderData, onSlider, setOnSlider }) => {
+  
   return (
     <div>
     <div className="first-container">
       <div className="first-left-container">
         <h1>{sliderData.text1}</h1>
         <p id="para1">{sliderData.para1}</p>
+
+
         <button className="btn">Request Demo</button>
+        
       </div>
       <div className="first-right-container">
         <img src={sliderData.img1} alt="Slider Image" />

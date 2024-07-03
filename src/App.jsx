@@ -12,6 +12,7 @@ import ThirdContainer from "./components/ThirdContainer/ThirdContainer";
 import FourthContainer from "./components/FourthContainer/FourthContainer";
 import FormContainer from "./components/FormContainer/FormContainer";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Router } from "react-router-dom";
 
 function App() {
   const sliderData = [
@@ -55,6 +56,7 @@ function App() {
       <FormContainer/>
       <CompnayLogoSlider />
       <Footer/>
+
     </>
   );
 }
