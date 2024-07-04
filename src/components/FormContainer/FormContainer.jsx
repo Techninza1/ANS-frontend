@@ -43,6 +43,7 @@ const FormContainer = forwardRef((props,ref) => {
           brandname: "",
           message: "",
         });
+        
         Swal.fire("Success", "Your form has been submitted!", "success");
       } else {
         const errorData = await response.json();
