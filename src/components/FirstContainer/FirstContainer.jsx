@@ -1,8 +1,6 @@
 import React from "react";
 import "./FirstContainer.css";
-
-
-const FirstContainer = ({ sliderData, onSlider, setOnSlider }) => {
+const FirstContainer = ({ sliderData, onSlider, setOnSlider,handleForm }) => {
   
   return (
     <div>
@@ -10,10 +8,7 @@ const FirstContainer = ({ sliderData, onSlider, setOnSlider }) => {
       <div className="first-left-container">
         <h1>{sliderData.text1}</h1>
         <p id="para1">{sliderData.para1}</p>
-
-
-        <button className="btn">Request Demo</button>
-        
+        <button onClick={handleForm} className="btn">Request Demo</button>
       </div>
       <div className="first-right-container">
         <img src={sliderData.img1} alt="Slider Image" />

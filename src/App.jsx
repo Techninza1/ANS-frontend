@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useRef, useState ,useEffect} from "react";
 import FirstContainer from "./components/FirstContainer/FirstContainer";
 import NavBar from "./components/NavBar/NavBar";
 import Dashboadimage from "./assets/images/Dashboadimage.gif";
@@ -13,6 +13,7 @@ import FourthContainer from "./components/FourthContainer/FourthContainer";
 import FormContainer from "./components/FormContainer/FormContainer";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Router } from "react-router-dom";
+import { BsBehance } from "react-icons/bs";
 
 function App() {
   const sliderData = [
@@ -41,6 +42,22 @@ function App() {
 
   const [onSlider, setOnSlider] = useState(0);
 
+  
+    const formRef = useRef(null);
+  
+    useEffect(() => {
+      console.log('FormRef:', formRef.current);
+    }, [formRef]);
+  
+    const scrollToForm = () => {
+      if (formRef.current) {
+        formRef.current.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('formRef is null');
+      }
+    };
+
+
   return (
     <>
       <NavBar />
@@ -48,12 +65,15 @@ function App() {
         sliderData={sliderData[onSlider]}
         onSlider={onSlider}
         setOnSlider={setOnSlider}
+        handleForm={scrollToForm}
       />
       <CompnayLogoSlider />
       <EcommerceContainer />
       <ThirdContainer/>
       <FourthContainer/>
-      <FormContainer/>
+      <FormContainer 
+        ref={formRef}
+      />
       <CompnayLogoSlider />
       <Footer/>
 
